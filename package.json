@@ -1,0 +1,14 @@
+{
+  "name": "csv-to-json",
+  "version": "0.0.1",
+  "description": "Convert csv files to json from the command line",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Zach Toben",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "1.12.1"
+  }
+}
