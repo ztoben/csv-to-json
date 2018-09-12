@@ -21,7 +21,7 @@ const pathToRead = () => {
 const columnsToUse = () => {
   return new Promise((resolve) => {
     rl.question('Columns to use (comma separated): ', (ans) => {
-      columns = ans.split(',');
+      columns = ans.split(',').map(item => item.trim());
       resolve();
     });
   });
@@ -60,7 +60,7 @@ main().then(() => {
       }
     })
     .on('end', () => {
-      fs.writeFile(`./${filename}.json`, JSON.stringify(json), null, (err) => {
+      fs.writeFile(`./${filename}.json`, JSON.stringify(json, null, 2), null, (err) => {
         if (err) console.log(err);
       });
     });

@@ -11,8 +11,24 @@ npm i
 npm run start
 
 Path to read: ./pokemon.csv
-Columns to use (comma separated): id,identifier,order
+Columns to use (comma separated): id, identifier
 Output filename: pokemon
 ```
 
-Example output [here](./pokemon.json).
+#### Output
+
+```
+[
+  {
+    "id": "1",
+    "identifier": "bulbasaur"
+  },
+  {
+    "id": "2",
+    "identifier": "ivysaur"
+  },
+  ...
+]
+```
+
+Full output [here](./pokemon.json).
